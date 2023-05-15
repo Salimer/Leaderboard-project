@@ -12,7 +12,7 @@
 <div align="center">
   
   <br/>
-<h1 align="center">To-Do List</h1>
+<h1 align="center">LeaderBoard website</h1>
 </div>
 
 
@@ -44,10 +44,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To-Do List] <a name="about-project"></a>
+# 📖 [LeaderBoard website] <a name="about-project"></a>
 
 
-**To-Do List** is a project to showcase daily tasks arrangement with the help of webpack.
+**LeaderBoard webiste** displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,7 +79,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://salimer.github.io/To-Do-List/dist/)
+- [Live Demo Link](https://salimer.github.io/Leaderboard-project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,14 +107,14 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Salimer/To-Do-List.git
+  git clone https://github.com/Salimer/Leaderboard-project.git
 ```
 
 using Ubuntu:
 
 ```sh
   cd my-desired-folder
-  git clone https://github.com/Salimer/To-Do-List.git
+  git clone https://github.com/Salimer/Leaderboard-project.git
 ```
 
 For more information on how to clone or fork a repository:
@@ -132,7 +132,7 @@ To run the project, open with **index.html** with any web browser.
 For example, for Google Chrome with Ubuntu:
 
 ```sh
-  cd To-Do-List
+  cd Leaderboard-project
   google-chrome index.html
 ```
 
