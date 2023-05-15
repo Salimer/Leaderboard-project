@@ -168,7 +168,7 @@ There are no test available for this project.
 
 
 Future changes:
-- improve task box responsiveness
+- improve score box responsiveness
 - Add more styles and colors
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
