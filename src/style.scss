@@ -9,10 +9,11 @@ button {
   height: 1.5rem;
   width: 4rem;
 }
+
 .leader-board {
   display: flex;
   gap: 1rem;
-  
+
   article {
     border: 1px solid black;
     padding: 2em;
@@ -27,6 +28,7 @@ button {
 
     .scores-container {
       border: 1px solid red;
+
       .score-item {
         list-style: none;
       }
