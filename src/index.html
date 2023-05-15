@@ -7,14 +7,23 @@
     <title>Leaderboard-project</title>
 </head>
 <body>
-    <section class="to-do-box">
-        <ul class="to-do-list">
-            <li id="to-do-title" class="list-item">Today's To Do</li>
-            <li class="list-item">
-                <input class="input" type="text" placeholder="Add to your list...">
-            </li>
-        </ul>
-        <a class="clear">Clear all completed</a>
+    <h1 id="title">Leaderboard</h1>
+    <section class="leader-board">
+        <article class="recent-scores">
+            <div class="recent-title">
+                <p>Recent scores</p>
+                <button>Refresh</button>
+            </div>
+            <ul class="scores-container">
+                <li class="score-item">Salim: 100</li>
+            </ul>
+        </article>
+        <article class="add-score">
+            <p>Add your score</p>
+            <input placeholder="Your name">
+            <input placeholder="Your score">
+            <button>Submit</button>
+        </article>
     </section>
     <script src="index.js"></script>
 </body>
