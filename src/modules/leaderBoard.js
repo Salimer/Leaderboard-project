@@ -1,22 +1,13 @@
 export default class leaderboard {
-    constructor(name, score) {
-        this.name = name;
-        this.score = score;
+    constructor() {
+        this.list = [];
     }
 
-    static scoresList = [
-        {
-            name: 'Salim',
-            score: 100
-        },
-        {
-            name: 'Misal',
-            score: 0
-        }
-    ];
-
-    addItem (name, score) {
-        const newItem = new leaderboard(name, score);
-        scoresList.push(newItem);
+    addItem (newName, newScore) {
+        const newItem = {
+            name: newName,
+            score: newScore
+        };
+        this.list.push(newItem);
     }
 }
