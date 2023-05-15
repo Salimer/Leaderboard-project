@@ -2,93 +2,39 @@ $primary-color: #f6f6f6;
 
 body {
   background-color: $primary-color;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.leader-board {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  article {
+    border: 1px solid black;
+    padding: 2em;
+  }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.to-do-box {
-  background-color: #fff;
-  border-radius: 4px;
-  margin: 1rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  min-width: 80%;
-
-  .to-do-list {
-    .input {
-      border: 0;
-      margin: 0;
-      padding: 1rem;
-      width: 100%;
-      font-size: 1.5rem;
-
-      &:focus {
-        outline: none;
-      }
-
-      &::placeholder {
-        font-style: italic;
-      }
-    }
-
-    #to-do-title {
-      padding: 1.5rem 1rem;
-      font-size: 2rem;
-    }
-
-    .edit-bg {
-      background-color: #fffecb;
-    }
-
-    .list-item {
-      border-bottom: 1px solid #c8c8c8;
-      padding: 0 1rem;
+  .recent-scores {
+    .recent-title {
       display: flex;
       align-items: center;
+      gap: 1rem;
 
-      .check-box {
-        margin-right: 1rem;
+      button {
+        height: 1.5rem;
       }
+    }
 
-      .delete-icon {
-        img {
-          width: 1.5rem;
-          cursor: pointer;
-          padding: 1rem;
-        }
-      }
-
-      .description {
-        width: 100%;
-        font-size: 1.5rem;
-        border: 0;
-
-        &:focus {
-          outline: none;
-        }
+    .scores-container {
+      border: 1px solid red;
+      .score-item {
+        list-style: none;
       }
     }
   }
 
-  .clear {
-    display: block;
-    background-color: $primary-color;
-    width: 100%;
-    padding: 1rem 0;
-    text-decoration: none;
-    color: #b7b7b7;
-    text-align: center;
-    cursor: pointer;
+  .add-score {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
