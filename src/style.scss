@@ -1,0 +1,47 @@
+$primary-color: #f6f6f6;
+
+body {
+  background-color: $primary-color;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  height: 1.5rem;
+  width: 4rem;
+}
+
+.leader-board {
+  display: flex;
+  gap: 1rem;
+
+  article {
+    border: 1px solid black;
+    padding: 2em;
+  }
+
+  .recent-scores {
+    .recent-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .scores-container {
+      border: 1px solid red;
+
+      .score-item {
+        list-style: none;
+      }
+    }
+  }
+
+  .add-score {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    #submit {
+      align-self: flex-end;
+    }
+  }
+}
