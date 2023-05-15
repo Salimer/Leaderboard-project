@@ -5,8 +5,13 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+button {
+  height: 1.5rem;
+  width: 4rem;
+}
 .leader-board {
   display: flex;
+  gap: 1rem;
   
   article {
     border: 1px solid black;
@@ -18,10 +23,6 @@ body {
       display: flex;
       align-items: center;
       gap: 1rem;
-
-      button {
-        height: 1.5rem;
-      }
     }
 
     .scores-container {
@@ -36,5 +37,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    #submit {
+      align-self: flex-end;
+    }
   }
 }
