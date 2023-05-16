@@ -1,4 +1,4 @@
-export default async function sendData() {
+export default async () => {
   const requestURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games";
   const requestData = {
     name: "Salim's game"
