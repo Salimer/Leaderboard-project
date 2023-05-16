@@ -19,8 +19,11 @@ export default (newLB, gameID) => {
       newName.value = '';
       newScore.value = '';
     } else {
-      // eslint-disable-next-line no-alert
-      alert('Please fill both fields');
+        const error = document.querySelector('#error');
+        setTimeout(() => {
+            error.classList.toggle('hide');
+        }, 3000);
+        error.classList.toggle('hide');
     }
   });
 };
