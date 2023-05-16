@@ -5,7 +5,7 @@ export default class leaderboard {
 
   addItem(newName, newScore) {
     const newItem = {
-      name: newName,
+      user: newName,
       score: newScore,
     };
     this.list.push(newItem);
