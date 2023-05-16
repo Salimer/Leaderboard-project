@@ -1,4 +1,4 @@
-export default class leaderboard {
+export default class LeaderBoard {
   constructor() {
     this.list = [];
   }
