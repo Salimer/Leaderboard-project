@@ -12,16 +12,19 @@
         <article class="recent-scores">
             <div class="recent-title">
                 <p>Recent scores</p>
-                <button>Refresh</button>
+                <button id="refresh">Refresh</button>
             </div>
             <ul class="scores-container">
             </ul>
         </article>
         <article class="add-score">
             <p>Add your score</p>
-            <input id="new-name" placeholder="Your name">
-            <input id="new-score" placeholder="Your score">
-            <button id="submit">Submit</button>
+            <form class="form">
+                <input id="new-name" placeholder="Your name">
+                <input id="new-score" placeholder="Your score">
+                <button id="submit">Submit</button>
+                <p id="error" class="hide">*Please fill both fields</p>
+            </form>
         </article>
     </section>
     <script src="index.js"></script>
