@@ -40,6 +40,12 @@ button {
     flex-direction: column;
     gap: 1rem;
 
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
     #submit {
       align-self: flex-end;
     }
