@@ -16,5 +16,6 @@ export default async () => {
   const responseData = await response.json();
 
   const gameID = responseData.result.split(' ')[3];
+  localStorage.setItem('ID', gameID);
   return gameID;
 };
