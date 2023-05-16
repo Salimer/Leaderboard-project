@@ -1,7 +1,7 @@
-async function sendData() {
+export default async function sendData() {
   const requestURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games";
   const requestData = {
-    name: "My cool new game"
+    name: "Salim's game"
   };
 
   const request = new Request(requestURL, {
@@ -14,12 +14,7 @@ async function sendData() {
 
   const response = await fetch(request);
   const responseData = await response.json();
-
-  console.log(responseData.result);
-  const splitResult = responseData.result.split(' ');
-  console.log(splitResult);
-  const gameID = splitResult[3];
-  console.log(gameID);
+  
+  const gameID = responseData.result.split(' ')[3];
+  return gameID;
 }
-
-sendData();

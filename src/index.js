@@ -1,10 +1,12 @@
 import './style.scss';
 import LeaderBoard from './modules/leaderBoard.js';
 import listScores from './modules/listScores.js';
+import newGameID from './modules/newGameID.js';
 
 const newLB = new LeaderBoard();
 listScores(newLB.list);
-
+const gameID = newGameID();
+console.log(gameID);
 const submitBtn = document.querySelector('#submit');
 submitBtn.addEventListener('click', () => {
   const newName = document.querySelector('#new-name');
