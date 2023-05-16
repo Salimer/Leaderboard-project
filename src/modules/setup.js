@@ -1,4 +1,4 @@
-import LeaderBoard from './LeaderBoard.js';
+import LeaderBoard from './leaderboardAPI/LeaderBoard.js';
 import init from './init.js';
 import newGameID from './leaderboardAPI/newGameID.js';
 
