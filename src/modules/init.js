@@ -19,11 +19,11 @@ export default (newLB, gameID) => {
       newName.value = '';
       newScore.value = '';
     } else {
-        const error = document.querySelector('#error');
-        setTimeout(() => {
-            error.classList.toggle('hide');
-        }, 3000);
+      const error = document.querySelector('#error');
+      setTimeout(() => {
         error.classList.toggle('hide');
+      }, 3000);
+      error.classList.toggle('hide');
     }
   });
 };
