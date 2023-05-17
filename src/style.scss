@@ -7,6 +7,15 @@ $primary-color: #f6f6f6;
 body {
   background-color: $primary-color;
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 2em;
 }
 
 button {
@@ -30,12 +39,9 @@ button:hover {
 
 .leader-board {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-
-  article {
-    border: 1px solid black;
-    padding: 2em;
-  }
 
   .recent-scores {
     .recent-title {
