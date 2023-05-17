@@ -2,10 +2,6 @@ $primary-color: #f6f6f6;
 $border-radius: 0.7rem;
 $button-color: #45a049ac;
 
-.hide {
-  opacity: 0;
-}
-
 body {
   background-color: $primary-color;
   font-family: 'Courier New', Courier, monospace;
@@ -13,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+  font-size: 24px;
 }
 
 article {
@@ -25,6 +22,12 @@ article {
 input {
   padding: 1rem;
   border-radius: $border-radius;
+  font-size: 16px;
+
+  &::placeholder {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+  }
 }
 
 button {
@@ -44,6 +47,10 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.hide {
+  opacity: 0;
 }
 
 .leader-board {
@@ -66,10 +73,9 @@ button:hover {
         list-style: none;
         text-align: center;
         background-color: $button-color;
-        border-radius: 100px;
+        border-radius: $border-radius;
         padding: 0.5rem;
         margin: 0.5rem 0;
-        font-size: 16px;
         font-weight: bold;
         color: black;
       }
@@ -91,5 +97,6 @@ button:hover {
     #submit {
       align-self: flex-end;
     }
+    
   }
 }
