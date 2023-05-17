@@ -10,12 +10,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: bold;
 }
 
 article {
-  border-radius: 8px;
-  border: 1px solid black;
+  border-radius: 1em;
+  border: .3rem solid black;
   padding: 2em;
+  background-color: #c2eec5;
 }
 
 button {
@@ -51,10 +53,18 @@ button:hover {
     }
 
     .scores-container {
-      border: 1px solid red;
+      padding: 0;
 
       .score-item {
         list-style: none;
+        text-align: center;
+        background-color: #45a049ac;
+        border-radius: 100px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
       }
     }
   }
